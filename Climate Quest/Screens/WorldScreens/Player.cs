@@ -95,6 +95,7 @@ public class Player: Tile
     
     public override void Update(GameTime gameTime)
     {
+        Collection.Update(gameTime);
         for (var i = _bullets.Count - 1; i >= 0; i--)
         {
             _bullets[i].Update(gameTime);
