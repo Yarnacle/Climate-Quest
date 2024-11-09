@@ -123,6 +123,14 @@ public abstract class Npc: Tile
         DialogueBox.SetText(Dialogue[DialogueIndex].Item2);
         Player.SetParalyzed(true);
         DialogueState = State.During;
+        if (Dialogue[DialogueIndex].Item1 == Color.White)
+        {
+            Textures.SoundEffects.PlayerDialogue.Play();
+        }
+        else
+        {
+            Textures.SoundEffects.NPCDialogue.Play();
+        }
     }
     public virtual void NextDialogue()
     {
@@ -142,6 +150,14 @@ public abstract class Npc: Tile
         DialogueIndex++;
         DialogueBox.SetColor(Dialogue[DialogueIndex].Item1);
         DialogueBox.SetText(Dialogue[DialogueIndex].Item2);
+        if (Dialogue[DialogueIndex].Item1 == Color.White)
+        {
+            Textures.SoundEffects.PlayerDialogue.Play();
+        }
+        else
+        {
+            Textures.SoundEffects.NPCDialogue.Play();
+        }
     }
 
     public virtual void FinishedDialogue()
