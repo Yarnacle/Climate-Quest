@@ -68,7 +68,8 @@ public static class Textures
         MaterialTiles.Water = LoadTile("MaterialTiles/Water.png", Color.Blue);
         MaterialTiles.Wall = LoadTile("MaterialTiles/Wall.png", Color.SlateGray);
         MaterialTiles.SecretDoor = LoadTile("MaterialTiles/SecretDoor.png", Color.Gold);
-
+        MaterialTiles.Rubble = LoadTile("MaterialTiles/rubble.png", Color.Gray);
+        
         NPCs.Death1 = LoadTile("NPCs/Death1.png", new Color(150,150,150));
         NPCs.Death2 = LoadTile("NPCs/Death2.png", new Color(100,100,100));
         NPCs.Death3 = LoadTile("NPCs/Death3.png", new Color(50,50,50));
