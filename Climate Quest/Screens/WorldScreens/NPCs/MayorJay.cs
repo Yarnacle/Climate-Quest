@@ -49,9 +49,9 @@ public class MayorJay: Npc
         }
         else if (_plotProgress == 4)
         {
-            ScreenManager.Worlds["Hideout"].AddNPC(new Lain(ScreenManager,SpriteBatch,ScreenManager.Worlds["Hideout"]));
-            ScreenManager.Worlds["Cabin2"].AddNPC(new Matt(ScreenManager, SpriteBatch, ScreenManager.Worlds["Hideout"]));
-            ScreenManager.Worlds["Cabin2"].AddNPC(new Pyro(ScreenManager,SpriteBatch,ScreenManager.Worlds["Hideout"]));
+            // ScreenManager.Worlds["Hideout"].AddNPC(new Lain(ScreenManager,SpriteBatch,ScreenManager.Worlds["Hideout"]));
+            // ScreenManager.Worlds["Cabin2"].AddNPC(new Matt(ScreenManager, SpriteBatch, ScreenManager.Worlds["Hideout"]));
+            // ScreenManager.Worlds["Cabin2"].AddNPC(new Pyro(ScreenManager,SpriteBatch,ScreenManager.Worlds["Hideout"]));
         }
         else if (_plotProgress == 5)
         {

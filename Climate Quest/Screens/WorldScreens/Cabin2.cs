@@ -17,26 +17,33 @@ public class Cabin2: World
             {new Point(10,8),"Hideout"}
         },false)
     {
-        NPCs.Add(Color.Gold,new SecretDoor(manager,spriteBatch,this));
+        // NPCs.Add(Color.Gold,new SecretDoor(manager,spriteBatch,this));
+        NPCs.Add(new Color(0, 200, 200), new Pyro(manager, spriteBatch, this));
+        NPCs.Add(Color.Tomato, new Matt(manager, spriteBatch, this));
+    }
+
+    public override void Draw(GameTime gameTime)
+    {
+        
     }
 
     public override void Enter(Player player)
     {
         base.Enter(player);
-        if (player.GetGridPosition().Y == 8)
-        {
-            NPCs[Color.Gold].NewPath(new List<Point>() { new Point(9, 8) });
-            NPCs[Color.Gold].StartPath();
-        }
+        // if (player.GetGridPosition().Y == 8)
+        // {
+        //     NPCs[Color.Gold].NewPath(new List<Point>() { new Point(9, 8) });
+        //     NPCs[Color.Gold].StartPath();
+        // }
     }
 
-    protected override void Exit(World world)
-    {
-        base.Exit(world);
-        if (world == ScreenManager.Worlds["FarmBend"])
-        {
-            NPCs[Color.Gold].SetGridPosition(new Point(9,8));
-            NPCs[Color.Gold].NewPath(new List<Point>() {new Point(11,8)});
-        }
-    }
+    // protected override void Exit(World world)
+    // {
+    //     base.Exit(world);
+    //     if (world == ScreenManager.Worlds["FarmBend"])
+    //     {
+    //         NPCs[Color.Gold].SetGridPosition(new Point(9,8));
+    //         NPCs[Color.Gold].NewPath(new List<Point>() {new Point(11,8)});
+    //     }
+    // }
 }
