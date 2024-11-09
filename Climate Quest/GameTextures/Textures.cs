@@ -98,6 +98,9 @@ public static class Textures
         SoundEffects.StartGame = LoadSoundEffect("Sounds/StartGame.wav");
         SoundEffects.NPCDialogue = LoadSoundEffect("Sounds/NPCDialogue.wav");
         SoundEffects.PlayerDialogue = LoadSoundEffect("Sounds/PlayerDialogue.wav");
+
+        Icons.Transportation = Load("Icons/Clean.png");
+        Icons.Voting = Load("Icons/VotingIcon.png");
     }
 
     private static Texture2D Load(string path)
