@@ -50,7 +50,7 @@ public class TextPopup: Popup
 
         if (DisplayArrow)
         {
-            SpriteBatch.Draw(Textures.General.NextArrow, new Rectangle(910, 910, 32, 32), Color.White);
+            SpriteBatch.Draw(Textures.General.NextArrow, new Rectangle(Box.X + Box.Width - 90,Box.Y + Box.Height - 90, 32, 32), Color.White);
         }
     }
 

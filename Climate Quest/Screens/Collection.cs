@@ -4,6 +4,7 @@ using ClimateQuest.GameTextures;
 using ClimateQuest.Screens.WorldScreens;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace ClimateQuest.Screens;
 
@@ -26,8 +27,7 @@ public class Collection : TextPopup
 
     public void NewUnlock(String action)
     {
-        _newPending = false;
-        _showPopup = true;
+        _newPending = true;
         ClimateActions.Add(action);
         SetText("CLIMATE ACTION UNLOCKED:");
         _skillLabel.SetText(action);
@@ -35,16 +35,15 @@ public class Collection : TextPopup
 
     public override void Update(GameTime gameTime)
     {
+        if (Game1.IsKeyPressed(Keys.F))
+        {
+            _showPopup = false;
+            _player.SetParalyzed(false);
+        }
         if (_newPending)
         {
             _newPending = false;
             _showPopup = true;
-            _startTime = gameTime.TotalGameTime.TotalMilliseconds;
-        }
-        if ((gameTime.TotalGameTime.TotalMilliseconds - _startTime) / 1000 > 5)
-        {
-            _showPopup = false;
-            _player.SetParalyzed(false);
         }
     }
 
