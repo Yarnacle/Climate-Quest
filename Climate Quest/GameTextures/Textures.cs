@@ -42,7 +42,7 @@ public static class Textures
         General.NextArrow = Load("General/NextArrow.png");
         General.EvilEyes = Load("General/EvilEyes.png");
         General.MouthedJay = LoadTile("General/MouthedSheriffJay.png", Color.Gray);
-
+        General.UnlockSplash = Load("General/SplashTextBox.png");
 
         PixelMaps.Spawn = Load("PixelMaps/Spawn.png");
         PixelMaps.SpawnEntrance = Load("PixelMaps/SpawnEntrance.png");

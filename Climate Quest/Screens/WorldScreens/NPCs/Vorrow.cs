@@ -15,7 +15,7 @@ public class Vorrow: Npc
             Tuple.Create(Color.White,"What?"),
             Tuple.Create(Color.GreenYellow,"Normally, food waste is thrown away in standard trash cans. In this bad boy, it's converted into soil to be reused for growing food."),
             Tuple.Create(Color.White,"What difference does it make?"),
-            Tuple.Create(Color.Green,"It is more resource-efficient, wasteless, and sustainable to discard food waste and other organic waste into composting bins, rather than standard trash cans.")
+            Tuple.Create(Color.GreenYellow,"It is more resource-efficient, wasteless, and sustainable to discard food waste and other organic waste into composting bins, rather than standard trash cans.")
         }, new Point(5, 6), null,new List<Tuple<Color, string>>()
         {
             Tuple.Create(Color.GreenYellow,"Some greater good indeed...")
