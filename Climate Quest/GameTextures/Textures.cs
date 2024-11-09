@@ -63,13 +63,14 @@ public static class Textures
         MaterialTiles.Bark = LoadTile("MaterialTiles/Bark.png", Color.Brown);
         MaterialTiles.Farmland = LoadTile("MaterialTiles/Farmland.png", Color.GreenYellow);
         MaterialTiles.Grass = LoadTile("MaterialTiles/Grass.png", Color.Green);
-        // MaterialTiles.Ice = LoadTile("MaterialTiles/Ice.png", Color.LightBlue);
+        MaterialTiles.Bike = LoadTile("MaterialTiles/Bike.png", Color.LawnGreen);
         MaterialTiles.WhiteTile = LoadTile("MaterialTiles/WhiteTile.png", Color.WhiteSmoke);
         MaterialTiles.Water = LoadTile("MaterialTiles/Water.png", Color.Blue);
         MaterialTiles.Wall = LoadTile("MaterialTiles/Wall.png", Color.SlateGray);
         MaterialTiles.SecretDoor = LoadTile("MaterialTiles/SecretDoor.png", Color.Gold);
         MaterialTiles.Rubble = LoadTile("MaterialTiles/rubble.png", Color.Gray);
         MaterialTiles.Composter = LoadTile("MaterialTiles/Composter.png", Color.Olive);
+        MaterialTiles.AC = LoadTile("MaterialTiles/GoodAirConditioner.png", Color.DarkOliveGreen);
         
         NPCs.Death1 = LoadTile("NPCs/Death1.png", new Color(150,150,150));
         NPCs.Death2 = LoadTile("NPCs/Death2.png", new Color(100,100,100));
@@ -87,6 +88,7 @@ public static class Textures
         NPCs.Matt = LoadTile("NPCs/Matt.png", Color.Tomato);
         NPCs.Pyro = LoadTile("NPCs/Pyro.png", Color.Honeydew);
         NPCs.Raaj = LoadTile("NPCs/Raaj.png", Color.DarkBlue);
+        NPCs.Biker = LoadTile("NPCs/Biker.png", Color.CadetBlue);
     }
 
     private static Texture2D Load(string path)
