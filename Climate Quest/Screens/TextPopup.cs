@@ -16,8 +16,9 @@ public class TextPopup: Popup
     protected int Padding;
     protected Texture2D Background;
     protected bool DisplayArrow;
+    private bool _centered;
     
-    public TextPopup(ScreenManager manager,SpriteBatch spriteBatch,Rectangle box,SpriteFont font,string text,Color color,float scale,int padding,Texture2D background) : base(manager,spriteBatch,box)
+    public TextPopup(ScreenManager manager,SpriteBatch spriteBatch,Rectangle box,SpriteFont font,string text,Color color,float scale,int padding,Texture2D background,bool centered) : base(manager,spriteBatch,box)
     {
         DisplayArrow = false;
         Text = text;
@@ -26,6 +27,7 @@ public class TextPopup: Popup
         Scale = scale;
         Padding = padding;
         Background = background;
+        _centered = centered;
         UpdateWrapped();
     }
 
@@ -38,7 +40,14 @@ public class TextPopup: Popup
     {
         SpriteBatch.Draw(Background,Box,Color.White);
         // SpriteBatch.Draw(Textures.General.SolidColor,new Rectangle(Box.X + Padding,Box.Y + Padding,Box.Width - 2 * Padding,Box.Height - 2 * Padding),Color.Yellow);
-        SpriteBatch.DrawString(Font,WrappedText,new Vector2(Box.X + Padding,Box.Y + Padding),Color,0,new Vector2(0,0),Scale,SpriteEffects.None,0);
+        int offset = 0;
+        if (_centered)
+        {
+            offset = (int) ((Box.Width - Padding * 2) - Font.MeasureString(Text).X * Scale) / 2;
+        }
+        SpriteBatch.DrawString(Font, WrappedText, new Vector2(Box.X + Padding + offset, Box.Y + Padding), Color, 0,
+                         new Vector2(0, 0), Scale, SpriteEffects.None, 0);
+
         if (DisplayArrow)
         {
             SpriteBatch.Draw(Textures.General.NextArrow, new Rectangle(910, 910, 32, 32), Color.White);
@@ -70,6 +79,10 @@ public class TextPopup: Popup
     private void UpdateWrapped()
     {
         var width = Box.Width - Padding * 2;
+        if (_centered)
+        {
+            
+        }
         try
         {
             if (Font.MeasureString(Text).X * Scale < width)

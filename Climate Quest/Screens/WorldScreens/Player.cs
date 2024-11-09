@@ -28,8 +28,10 @@ public class Player: Tile
     private readonly List<Bullet> _bullets;
     private readonly List<Boom> _booms;
     
-    private const int Speed = 5;
+    private const int Speed = 10;
     private const bool GunOverride = false;
+
+    public Collection Collection;
     
     public Player(ScreenManager manager,SpriteBatch spriteBatch,Texture2D texture, Point gridPosition): base(manager,spriteBatch,gridPosition,Color.Gray)
     {
@@ -41,6 +43,8 @@ public class Player: Tile
         _spriteBatch = spriteBatch;
         _destination = GridPosition;
         _texture = texture;
+        Collection = new Collection(manager, spriteBatch, new Rectangle(200, 200, 600, 600), Textures.General.Font, "",
+            Color.White, 1, 50, Textures.General.UnlockSplash,this);
     }
 
     public void SetTexture(Texture2D texture)
@@ -225,7 +229,7 @@ public class Player: Tile
         _spriteBatch.Draw(Textures.General.DestinationShadow,new Rectangle(_destination.X * 100,_destination.Y * 100,100,100),new Rectangle(0,0,_texture.Width,_texture.Height),Color.Black, 0, new Vector2(0,0), _horizontalFlip ? SpriteEffects.FlipHorizontally:SpriteEffects.None, 0);
         _spriteBatch.Draw(_texture, Box, new Rectangle(0, 0, _texture.Width,_texture.Height), Color.White, 0, new Vector2(0,0), _horizontalFlip ? SpriteEffects.FlipHorizontally:SpriteEffects.None, 0);
         _spriteBatch.Draw(Textures.General.EvilEyes,Box,new Rectangle(0,0,_texture.Width,_texture.Height),Color.White * ScreenManager.GetEvilPercent(),0,new Vector2(0,0),_horizontalFlip ? SpriteEffects.FlipHorizontally:SpriteEffects.None,0);
-        
+        Collection.Draw(gameTime);
         
     }
 }
