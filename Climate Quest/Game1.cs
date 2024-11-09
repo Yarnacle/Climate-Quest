@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Input;
 using ClimateQuest.Screens;
 using ClimateQuest.GameTextures;
 
+// hi from vinkent!
+
 namespace ClimateQuest;
 
 public class Game1 : Game
