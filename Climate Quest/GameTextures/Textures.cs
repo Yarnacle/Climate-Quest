@@ -96,6 +96,8 @@ public static class Textures
         
         SoundEffects.DialogueFinished = LoadSoundEffect("Sounds/DialogueFinished.wav");
         SoundEffects.StartGame = LoadSoundEffect("Sounds/StartGame.wav");
+        SoundEffects.NPCDialogue = LoadSoundEffect("Sounds/NPCDialogue.wav");
+        SoundEffects.PlayerDialogue = LoadSoundEffect("Sounds/PlayerDialogue.wav");
     }
 
     private static Texture2D Load(string path)
