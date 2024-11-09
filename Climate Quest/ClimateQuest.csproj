@@ -27,10 +27,6 @@
   		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   	</Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Textures\PixelMaps\" />
-    <Folder Include="Content\Textures\MaterialTiles\" />
-  </ItemGroup>
   <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
     <Message Text="Restoring dotnet tools" Importance="High" />
     <Exec Command="dotnet tool restore" />
