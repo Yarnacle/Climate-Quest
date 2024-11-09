@@ -74,7 +74,8 @@ public static class Textures
         MaterialTiles.Rubble = LoadTile("MaterialTiles/rubble.png", Color.Gray);
         MaterialTiles.Composter = LoadTile("MaterialTiles/Composter.png", Color.Olive);
         MaterialTiles.AC = LoadTile("MaterialTiles/GoodAirConditioner.png", Color.DarkOliveGreen);
-        
+        MaterialTiles.RecyclingBin = LoadTile("MaterialTiles/recycling.png", Color.Ivory);
+
         NPCs.Death1 = LoadTile("NPCs/Death1.png", new Color(150,150,150));
         NPCs.Death2 = LoadTile("NPCs/Death2.png", new Color(100,100,100));
         NPCs.Death3 = LoadTile("NPCs/Death3.png", new Color(50,50,50));
