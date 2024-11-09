@@ -87,6 +87,7 @@ public static class Textures
         NPCs.Matt = LoadTile("NPCs/Matt.png", Color.Tomato);
         NPCs.Pyro = LoadTile("NPCs/Pyro.png", Color.Honeydew);
         NPCs.Raaj = LoadTile("NPCs/Raaj.png", Color.DarkBlue);
+        NPCs.Biker = LoadTile("NPCs/Biker.png", Color.CadetBlue);
     }
 
     private static Texture2D Load(string path)
