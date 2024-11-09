@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Net.Mime;
 using System.Text.Encodings.Web;
 using ClimateQuest.GameTextures;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -144,7 +146,7 @@ public abstract class Npc: Tile
 
     public virtual void FinishedDialogue()
     {
-        
+        // Textures.SoundEffects.DialogueFinished.Play();
     }
 
     public virtual void Die()

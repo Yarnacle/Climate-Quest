@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -20,6 +21,7 @@ public static class Textures
     public static readonly dynamic MaterialTiles = new ExpandoObject();
     public static readonly dynamic NPCs = new ExpandoObject();
     public static readonly dynamic Icons = new ExpandoObject();
+    public static readonly dynamic SoundEffects = new ExpandoObject();
     
     public static void Load(GraphicsDevice graphicsDevice,ContentManager content)
     {
@@ -90,6 +92,8 @@ public static class Textures
         NPCs.Pyro = LoadTile("NPCs/Pyro.png", Color.Honeydew);
         NPCs.Raaj = LoadTile("NPCs/Raaj.png", Color.DarkBlue);
         NPCs.Biker = LoadTile("NPCs/Biker.png", Color.CadetBlue);
+        
+        SoundEffects.DialogueFinished = LoadSoundEffect("Sounds/DialogueFinished.wav");
     }
 
     private static Texture2D Load(string path)
@@ -110,5 +114,13 @@ public static class Textures
     private static SpriteFont LoadFont(ContentManager content,string path)
     {
         return content.Load<SpriteFont>(path);
+    }
+
+    private static SoundEffect LoadSoundEffect(string path)
+    {
+        var fileStream = new FileStream("Content/" + path, FileMode.Open);
+        var texture = SoundEffect.FromStream(fileStream);
+        fileStream.Close();
+        return texture;
     }
 }
