@@ -19,6 +19,7 @@ public static class Textures
     public static readonly dynamic PixelMaps = new ExpandoObject();
     public static readonly dynamic MaterialTiles = new ExpandoObject();
     public static readonly dynamic NPCs = new ExpandoObject();
+    public static readonly dynamic Icons = new ExpandoObject();
     
     public static void Load(GraphicsDevice graphicsDevice,ContentManager content)
     {
