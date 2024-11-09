@@ -37,13 +37,13 @@ public class Cabin2: World
         // }
     }
 
-    // protected override void Exit(World world)
-    // {
-    //     base.Exit(world);
-    //     if (world == ScreenManager.Worlds["FarmBend"])
-    //     {
-    //         NPCs[Color.Gold].SetGridPosition(new Point(9,8));
-    //         NPCs[Color.Gold].NewPath(new List<Point>() {new Point(11,8)});
-    //     }
-    // }
+    protected override void Exit(World world)
+    {
+        base.Exit(world);
+        // if (world == ScreenManager.Worlds["FarmBend"])
+        // {
+        //     NPCs[Color.Gold].SetGridPosition(new Point(9,8));
+        //     NPCs[Color.Gold].NewPath(new List<Point>() {new Point(11,8)});
+        // }
+    }
 }

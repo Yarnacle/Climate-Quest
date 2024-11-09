@@ -11,19 +11,19 @@ public class Pyro: Npc
     public Pyro(ScreenManager manager, SpriteBatch spriteBatch, World world) : base(manager, spriteBatch,
         Color.Honeydew, world, new List<Tuple<Color, string>>()
         {
-            Tuple.Create(PyroColor,"Hey pal. Looking for something?"),
+            Tuple.Create(PyroColor,"Hey pal. Can you spare an old fellow a vote?"),
+            Tuple.Create(Color.White,"I don't know. What are your policies?"),
+            Tuple.Create(PyroColor,"I don't have policies. I just listen to what my donaters say."),
+            Tuple.Create(Color.White,"What do you mean?"),
+            Tuple.Create(PyroColor,"I get paid big bucks by lobbying groups. Most of them are companies whom I always support."),
+            Tuple.Create(Color.White,"What do the companies want you to do?"),
+            Tuple.Create(PyroColor, "Great question. When I become mayor, they want me to cut down every tree and destroy all renewable energy sources."),
+            Tuple.Create(Color.White,"But that would destroy the world!"),
+            Tuple.Create(PyroColor,"Nuh-uh. I only have a third grade education, but trust me...I know more than any other scientist in the world."),
+            Tuple.Create(Color.White,"But what if you believed those policies would destoy the world?"),
+            Tuple.Create(PyroColor,"I wouldn't give a damn. I just care about money. If I was paid to kill every homeless person here I would."),
             Tuple.Create(Color.White,"..."),
-            Tuple.Create(PyroColor,"Get lost."),
-            Tuple.Create(Color.White,"..."),
-            Tuple.Create(Color.Aquamarine,"You think we care if you're the \"sheriff\"? All you know how to do is kill. You're just a brat with a gun."),
-            Tuple.Create(Color.White,"..."),
-            Tuple.Create(Color.Aquamarine,"You're not fooling anybody. We know what you did to Jur."),
-            Tuple.Create(PyroColor,"Of course, we're glad he never got to detonate, but there are OTHER ways to achieve that... ways that DON'T end up with Jur dead and his sister without family."),
-            Tuple.Create(Color.Aquamarine,"Can you just leave us alone?"),
-            Tuple.Create(Color.White,"..."),
-            Tuple.Create(PyroColor,"We're just a group of people fighting back against the injustice of this town."),
-            Tuple.Create(Color.White,"..."),
-            Tuple.Create(Color.Aquamarine,"So we offended some people. Big deal. A small price to pay for liberty."),
+            Tuple.Create(PyroColor,"So...you voting for me?"),
             
         }, new Point(7,6), null,null)
     {
