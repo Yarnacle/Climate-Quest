@@ -94,6 +94,7 @@ public static class Textures
         NPCs.Biker = LoadTile("NPCs/Biker.png", Color.CadetBlue);
         
         SoundEffects.DialogueFinished = LoadSoundEffect("Sounds/DialogueFinished.wav");
+        SoundEffects.StartGame = LoadSoundEffect("Sounds/StartGame.wav");
     }
 
     private static Texture2D Load(string path)
