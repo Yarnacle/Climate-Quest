@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClimateQuest", "ClimateQuest.csproj", "{B93A443B-61A4-4A91-8ADC-8283E32CAB5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{384A8D81-4366-49A6-AD9C-9CB1C618E3C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B93A443B-61A4-4A91-8ADC-8283E32CAB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93A443B-61A4-4A91-8ADC-8283E32CAB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93A443B-61A4-4A91-8ADC-8283E32CAB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93A443B-61A4-4A91-8ADC-8283E32CAB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
