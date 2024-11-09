@@ -18,8 +18,6 @@ public class Cabin2: World
         },false)
     {
         // NPCs.Add(Color.Gold,new SecretDoor(manager,spriteBatch,this));
-        NPCs.Add(new Color(0, 200, 200), new Pyro(manager, spriteBatch, this));
-        NPCs.Add(Color.Tomato, new Matt(manager, spriteBatch, this));
     }
 
     public override void Draw(GameTime gameTime)
