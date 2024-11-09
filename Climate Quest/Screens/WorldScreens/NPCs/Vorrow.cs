@@ -27,8 +27,7 @@ public class Vorrow: Npc
     
     public override void FinishedDialogue()
     {
-        Textures.SoundEffects.DialogueFinished.Play();
-        // new climate action unlocked: composting
+        base.FinishedDialogue();
         Player.Collection.NewUnlock("Composting");
     }
 

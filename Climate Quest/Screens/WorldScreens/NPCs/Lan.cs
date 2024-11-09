@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -21,5 +22,11 @@ public class Lan: Npc
         }, new Point(4, 7), null,null)
     {
 
+    }
+
+    public override void FinishedDialogue()
+    {
+        base.FinishedDialogue();
+        Player.Collection.NewUnlock("Recycling");
     }
 }

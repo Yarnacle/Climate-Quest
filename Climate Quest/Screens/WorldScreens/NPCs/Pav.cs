@@ -33,8 +33,8 @@ public class Pav: Npc
 
     public override void FinishedDialogue()
     {
-        // new climate action locked: energy efficient applications
-        Player.Collection.NewUnlock("Energy Efficiency");
+        base.FinishedDialogue();
+        Player.Collection.NewUnlock("Efficiency");
     }
 
     public override void AfterDeath()

@@ -26,4 +26,10 @@ public class Biker: Npc
     {
         
     }
+
+    public override void FinishedDialogue()
+    {
+        base.FinishedDialogue();
+        Player.Collection.NewUnlock("Transportation");
+    }
 }

@@ -29,4 +29,10 @@ public class Pyro: Npc
     {
 
     }
+
+    public override void FinishedDialogue()
+    {
+        base.FinishedDialogue();
+        Player.Collection.NewUnlock("Voting");
+    }
 }

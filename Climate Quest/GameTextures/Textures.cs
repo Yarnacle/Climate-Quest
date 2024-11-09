@@ -93,6 +93,10 @@ public static class Textures
         NPCs.Pyro = LoadTile("NPCs/Pyro.png", Color.Honeydew);
         NPCs.Raaj = LoadTile("NPCs/Raaj.png", Color.DarkBlue);
         NPCs.Biker = LoadTile("NPCs/Biker.png", Color.CadetBlue);
+
+        Icons.Composting = Load("Icons/ComposterIcon.png");
+        Icons.Energy = Load("Icons/GoodACIcon.png");
+        Icons.Recycling = Load("Icons/RecycleIcon.png");
         
         SoundEffects.DialogueFinished = LoadSoundEffect("Sounds/DialogueFinished.wav");
         SoundEffects.StartGame = LoadSoundEffect("Sounds/StartGame.wav");

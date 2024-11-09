@@ -137,7 +137,6 @@ public abstract class Npc: Tile
         if (DialogueIndex == Dialogue.Count - 1)
         {
             DialogueState = State.After;
-            Player.SetParalyzed(false);
             if (_sayingLastWords)
             {
                 LastWords = null;
@@ -162,7 +161,7 @@ public abstract class Npc: Tile
 
     public virtual void FinishedDialogue()
     {
-        // Textures.SoundEffects.DialogueFinished.Play();
+        Player.SetParalyzed(false);
     }
 
     public virtual void Die()
