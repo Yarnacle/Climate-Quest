@@ -31,6 +31,7 @@ public class MayorJay: Npc
         ScreenManager.Worlds["Cabin1"].AddNPC(new Pav(ScreenManager, SpriteBatch, ScreenManager.Worlds["Cabin1"]));
         ScreenManager.Worlds["Cabin2"].AddNPC(new Pyro(ScreenManager, SpriteBatch, ScreenManager.Worlds["Cabin2"]));
         ScreenManager.Worlds["Cabin2"].AddNPC(new Matt(ScreenManager, SpriteBatch, ScreenManager.Worlds["Cabin2"]));
+        ScreenManager.Worlds["CobbleRoad"].AddNPC(new Biker(ScreenManager, SpriteBatch, ScreenManager.Worlds["CobbleRoad"]));
     }
 
     public override void AfterDeath()
