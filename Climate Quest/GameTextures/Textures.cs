@@ -63,7 +63,7 @@ public static class Textures
         MaterialTiles.Bark = LoadTile("MaterialTiles/Bark.png", Color.Brown);
         MaterialTiles.Farmland = LoadTile("MaterialTiles/Farmland.png", Color.GreenYellow);
         MaterialTiles.Grass = LoadTile("MaterialTiles/Grass.png", Color.Green);
-        // MaterialTiles.Ice = LoadTile("MaterialTiles/Ice.png", Color.LightBlue);
+        MaterialTiles.Bike = LoadTile("MaterialTiles/Bike.png", Color.LawnGreen);
         MaterialTiles.WhiteTile = LoadTile("MaterialTiles/WhiteTile.png", Color.WhiteSmoke);
         MaterialTiles.Water = LoadTile("MaterialTiles/Water.png", Color.Blue);
         MaterialTiles.Wall = LoadTile("MaterialTiles/Wall.png", Color.SlateGray);

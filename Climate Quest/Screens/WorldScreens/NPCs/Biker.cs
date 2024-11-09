@@ -10,7 +10,7 @@ public class Biker: Npc
     public Biker(ScreenManager manager, SpriteBatch spriteBatch, World world) : base(manager, spriteBatch,
         Color.CadetBlue, world, new List<Tuple<Color, string>>()
         {
-            Tuple.Create(Color.White, "Hey, what's that thing you're riding?"),
+            Tuple.Create(Color.White, "Hey, what's that thing you were riding?"),
             Tuple.Create(Color.CadetBlue, "It's a bike!"),
             Tuple.Create(Color.White, "A what?"),
             Tuple.Create(Color.CadetBlue, "A bicycle! It's a bit tough to get a hang of initially, but it's fun to ride!"),
@@ -22,7 +22,7 @@ public class Biker: Npc
             Tuple.Create(Color.CadetBlue, "Yeah, but if you ride a bike, you won't have any of these issues."),
             Tuple.Create(Color.White, "Okay. Thanks for informing me!"),
             Tuple.Create(Color.CadetBlue, "No problem!"),
-        }, new Point(5, 6), null, null)
+        }, new Point(4,3), null, null)
     {
         
     }
