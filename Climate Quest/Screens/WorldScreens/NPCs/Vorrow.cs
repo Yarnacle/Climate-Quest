@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ClimateQuest.GameTextures;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -26,6 +27,7 @@ public class Vorrow: Npc
     
     public override void FinishedDialogue()
     {
+        Textures.SoundEffects.DialogueFinished.Play();
         // new climate action unlocked: composting
         Player.Collection.NewUnlock("Composting");
     }
