@@ -13,9 +13,9 @@ public class MayorJay: Npc
     
     public MayorJay(ScreenManager manager,SpriteBatch spriteBatch,World world) : base(manager,spriteBatch, Color.Maroon,world,new List<Tuple<Color,string>>()
     {
-        Tuple.Create(Color.IndianRed,"Hello! Ready for your next task?"),
-        Tuple.Create(Color.White,"..."),
-        Tuple.Create(Color.IndianRed,"Talkative as usual. Anyway there's a ROBBER on the loose. Get him please.")
+        Tuple.Create(Color.IndianRed,"ClimateTown is in a Climate Crisis! You have been recruited as the Climate Caretaker to learn what we can do and spread the word."),
+        Tuple.Create(Color.White,"Okay...? Where do I begin?"),
+        Tuple.Create(Color.IndianRed,"Maybe try asking other people. Good luck!"),
     },new Point(6,4),null,new List<Tuple<Color, string>>()
     {
         Tuple.Create(Color.IndianRed,"How could you...? What happened to... peace...?")
@@ -30,6 +30,7 @@ public class MayorJay: Npc
         {
             ScreenManager.Worlds["SpawnEntrance"]
                 .AddNPC(new Robber(ScreenManager, SpriteBatch, ScreenManager.Worlds["SpawnEntrance"]));
+            ScreenManager.Worlds["FarmBend"].AddNPC(new Vorrow(ScreenManager,SpriteBatch,ScreenManager.Worlds["FarmBend"]));
         }
         else if (_plotProgress == 1)
         {
@@ -39,7 +40,7 @@ public class MayorJay: Npc
         }
         else if (_plotProgress == 2)
         {
-            ScreenManager.Worlds["FarmBend"].AddNPC(new Vorrow(ScreenManager,SpriteBatch,ScreenManager.Worlds["FarmBend"]));
+            
         }
         else if (_plotProgress == 3)
         {
