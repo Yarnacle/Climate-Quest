@@ -28,7 +28,7 @@ public class Player: Tile
     private readonly List<Bullet> _bullets;
     private readonly List<Boom> _booms;
     
-    private const int Speed = 20;
+    private const int Speed = 5;
     private const bool GunOverride = false;
     
     public Player(ScreenManager manager,SpriteBatch spriteBatch,Texture2D texture, Point gridPosition): base(manager,spriteBatch,gridPosition,Color.Gray)
