@@ -12,18 +12,10 @@ public class Pav: Npc
     public Pav(ScreenManager manager, SpriteBatch spriteBatch, World world) : base(manager, spriteBatch,
     Color.DarkOrange, world, new List<Tuple<Color, string>>()
     {
-        Tuple.Create(Color.White,"..."),
-        Tuple.Create(Color.DarkOrange,"Bro Chenny is such an opp!"),
-        Tuple.Create(Color.LightGreen,"Sooo who forgot to file our taxes?"),
-        Tuple.Create(Color.DarkOrange,"Sooooooo who pays for this house?"),
-        Tuple.Create(Color.LightGreen,"Aight bro. You're only where you are today because of me."),
-        Tuple.Create(Color.DarkOrange,"Nah nah nah, I carried you though college. YOU'RE where YOU are because of ME."),
-        Tuple.Create(Color.LightGreen,"Who kept giving you that lil physics plug?"),
-        Tuple.Create(Color.DarkOrange,"Bro the sheriff can HEAR YOU."),
-        Tuple.Create(Color.LightGreen,"YOU'RE THE ONE YELLING!"),
-        Tuple.Create(Color.DarkOrange,"CALM YO ASS DOWN."),
-        Tuple.Create(Color.LightGreen,"NAH I'M GONNA BOX YOUR ASS UP-"),
-        Tuple.Create(Color.DarkOrange,"OH. OOOHHH. SO THAT'S HOW IT IS. YOU'RE NOT READY FOR THIS.")
+        Tuple.Create(Color.White,"What's with the \"Energy Star\" label on your air conditioner?"),
+        Tuple.Create(Color.DarkOrange,"Oh, that? That means that it's Energy Star certified. Energy Star is a program run by the Environmental Protection Agency to set standards on energy efficiency."),
+        Tuple.Create(Color.DarkOrange,"The Energy Star label certifies that this appliance is energy efficient. I always look for Energy Star certified products to reduce my carbon footprint and contribute to a healthier world."),
+        Tuple.Create(Color.White,"Cool, I'll take notice of that now.")
     }, new Point(5, 6), null,new List<Tuple<Color, string>>()
     {
         Tuple.Create(Color.DarkOrange,"Clear... my... search history..."),
@@ -41,7 +33,7 @@ public class Pav: Npc
 
     public override void FinishedDialogue()
     {
-        Player.SetDrawn(true);
+        // new climate action locked: energy efficient applications
     }
 
     public override void AfterDeath()
