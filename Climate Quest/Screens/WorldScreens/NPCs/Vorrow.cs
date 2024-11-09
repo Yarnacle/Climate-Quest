@@ -27,6 +27,7 @@ public class Vorrow: Npc
     public override void FinishedDialogue()
     {
         // new climate action unlocked: composting
+        Player.Collection.NewUnlock("Composting");
     }
 
     public override void AfterDeath()

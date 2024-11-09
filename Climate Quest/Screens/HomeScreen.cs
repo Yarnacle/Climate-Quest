@@ -15,13 +15,14 @@ public class HomeScreen: FullScreen
     private int _frames;
     private bool _dir;
     
+    
     public HomeScreen(ScreenManager manager,SpriteBatch spriteBatch): base(manager,spriteBatch)
     {
         _frames = 0;
         _dir = true;
         _number = 0;
-        _text = new TextPopup(manager, spriteBatch, new Rectangle(100, 600, 800, 400),Textures.General.Font,"Press [ENTER] to play\nPress [F] to interact",Color.Black,1f,50,Textures.General.Transparent);
-        _text2 = new TextPopup(manager, spriteBatch, new Rectangle(100, 800, 800, 400),Textures.General.Font,"Press [SPACE] to Kill",Color.DarkRed,1f,50,Textures.General.Transparent);
+        _text = new TextPopup(manager, spriteBatch, new Rectangle(100, 600, 800, 400),Textures.General.Font,"Press [ENTER] to play\nPress [F] to interact",Color.Black,1f,50,Textures.General.Transparent,true);
+        // _text2 = new TextPopup(manager, spriteBatch, new Rectangle(100, 800, 800, 400),Textures.General.Font,"Press [SPACE] to Kill",Color.DarkRed,1f,50,Textures.General.Transparent);
     }
 
     public override void Update(GameTime gameTime)
@@ -72,6 +73,6 @@ public class HomeScreen: FullScreen
     {
         SpriteBatch.Draw(Textures.HomeScreen.Background,FullScreen.Box,Color.White);
         _text.Draw(gameTime);
-        _text2.Draw(gameTime);
+        // _text2.Draw(gameTime);
     }
 }

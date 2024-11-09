@@ -15,9 +15,9 @@ public class Fadeout: FullScreen
     {
         _frames = 0;
         _titleText = new TextPopup(manager, spriteBatch, new Rectangle(150, 300, 500, 500), Textures.General.Font,
-            "Jay", Color.Black, 3, 0, Textures.General.Transparent);
+            "Jay", Color.Black, 3, 0, Textures.General.Transparent,true);
         _titleText2 = new TextPopup(manager, spriteBatch, new Rectangle(150, 500, 500, 500), Textures.General.Font,
-            "Town", Color.Black, 3, 0, Textures.General.Transparent);
+            "Town", Color.Black, 3, 0, Textures.General.Transparent,true);
     }
 
     public override void Draw(GameTime gameTime)
